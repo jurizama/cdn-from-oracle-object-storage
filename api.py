@@ -40,6 +40,6 @@ class _s3(Resource):
 
 api.add_resource(_s3,"/")
 if __name__ == "__main__":
-	app.run(debug=True,port=2390, host="0.0.0.0")
+	app.run(debug=True,port=80)
 
 #cdn access = https://cdn.comnetbe.my.id/

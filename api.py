@@ -23,7 +23,7 @@ s3 = boto3.resource(
 
 class _s3(Resource):
     def get(self):
-        result = {'status':"LMAO"}
+        result = {'status':"LMAO IT WORKS!"}
         return jsonify(result)
 
     def post(self):
@@ -40,6 +40,6 @@ class _s3(Resource):
 
 api.add_resource(_s3,"/")
 if __name__ == "__main__":
-	app.run(debug=True,port=80)
+	app.run(debug=False,port=os.getenv("PORT")
 
 #cdn access = https://cdn.comnetbe.my.id/

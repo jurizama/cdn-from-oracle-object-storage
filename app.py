@@ -39,7 +39,7 @@ class _s3(Resource):
         return jsonify(response)            
 
 api.add_resource(_s3,"/")
-if __name__ == "__main__":
-	app.run(debug=False,port=os.getenv("PORT"))
+#if __name__ == "__main__":
+#	app.run(debug=False,port=os.getenv("PORT"))
 
 #cdn access = https://cdn.comnetbe.my.id/
